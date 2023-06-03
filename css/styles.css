@@ -48,3 +48,15 @@
   width: auto; /* Ajoutez cette ligne pour ajuster la largeur du logo */
   height: auto; /* Ajoutez cette ligne pour ajuster la hauteur du logo */
 }
+
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.highlight {
+  animation: blink 2s infinite;
+}
