@@ -41,12 +41,9 @@
 }
 
 .logo {
-  top: 50%;
-  left: 50%;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto; /* Ajoutez cette ligne pour ajuster la largeur du logo */
-  height: auto; /* Ajoutez cette ligne pour ajuster la hauteur du logo */
+  transform: translate(5%, 5%);
+  max-width: 93%;
+  max-height: 93%;
 }
 
 
