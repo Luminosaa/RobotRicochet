@@ -218,10 +218,12 @@ function Add_highlight(Map,RobotPos,color){
 // delete all hightlight
 function Del_highlight(){
   console.log("DEL HIGHLIGHT")
-  var elements = document.getElementsByClassName('grid-item');
-  Array.from(elements).forEach(function(element) {
+  var highlightedElements = document.querySelectorAll('.highlight');
+  highlightedElements.forEach(function(element) {
+    // Faites quelque chose avec chaque élément
     element.classList.remove('highlight');
-});
+
+  });
 }
 
 
@@ -240,6 +242,7 @@ function Game(Map, RobotPos){
         Del_robot(robot_clicked);
         Add_robot(robot_clicked,row,column);
         RobotPos[robot_clicked] = [parseInt(row),parseInt(column)];
+        higlight = Add_highlight(Map,RobotPos,robot_clicked);
       }
 
     // Click on a robot
